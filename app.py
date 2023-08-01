@@ -80,6 +80,6 @@ def dropping():
         DROP TABLE Basketball;
     ''')
     cur.close()
-    conn.close()
     conn.commit()
+    conn.close()
     return "Basketball Table Dropped"
